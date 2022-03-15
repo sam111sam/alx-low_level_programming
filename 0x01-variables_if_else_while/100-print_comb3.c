@@ -24,8 +24,11 @@ int main(void)
 	putchar(',');
 	putchar(32);
 }
-} else
+}
+	else
+{
 	num2++;
+}
 }
 	num1++;
 }
