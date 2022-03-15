@@ -1,0 +1,50 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int num1 = 0;
+	int num2 = 0;
+	int num3 = 0;
+	int num4 = 0;
+while (num1 <= 9)
+{
+	num4 = 0;
+	num3 = 0;
+	num2 = 0;
+while (num2 <= 9)
+{
+	num4 = 0;
+	num3 = 0;
+while (num3 <= 9)
+{
+	num4 = 0;
+while (num4 <= 9)
+{
+	if (num1 != num3 && num2 != num4)
+{
+	putchar('0' + num1);
+	putchar('0' + num2);
+	putchar(32);
+	putchar('0' + num3);
+	putchar('0' + num4);
+	num4++;
+	if (num1 == 9 && num2 == 8 && num3 == 9 && num4 == 9)
+{
+	break;
+}
+else
+	putchar(',');
+}
+}
+	num3++;
+}
+	num2++;
+}
+	num1++;
+}
+	return (0);
+}
