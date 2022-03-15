@@ -12,7 +12,10 @@ int main(void)
 {
 	putchar('0' + num);
 	putchar(',');
+	if (num != 9)
+{
 	putchar(32);
+}
 	num++;
 }
 	putchar('\n');
