@@ -24,7 +24,7 @@ int main(void)
 	putchar(',');
 	putchar(32);
 }
-}
+} else
 	num2++;
 }
 	num1++;
