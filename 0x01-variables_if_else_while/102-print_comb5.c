@@ -26,7 +26,7 @@ while (num3 <= 9)
         num4 = 0;
 while (num4 <= 9)
 {
-        if ( num2 < num4 || num1 < num3 )
+        if (num1 < num3 || (num1 == num3 && num2 < num4) )
 {
         putchar('0' + num1);
         putchar('0' + num2);
