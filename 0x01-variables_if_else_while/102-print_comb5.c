@@ -40,8 +40,10 @@ while (num4 <= 9)
 	num5++;
 }
 else
+{
 	putchar(',');
 	putchar(32);
+}
 }
 }
 	num3++;
