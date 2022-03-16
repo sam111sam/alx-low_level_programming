@@ -41,6 +41,7 @@ while (num4 <= 9)
 }
 else
 	putchar(',');
+	putchar(32);
 }
 }
 	num3++;
