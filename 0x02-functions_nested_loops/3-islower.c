@@ -2,8 +2,7 @@
  * _islower - check for lowercase character bry returning int
  *@c: the character to be checked
  *
- * Returns: on success 1.
- * if not ,0 is returned.
+ * Return: on success 1
  */
 int _islower(int c)/*Return: 1 || 0*/
 {
