@@ -30,6 +30,10 @@ void print_to_98(int n)
 	_putchar('0' + 8);
 	_putchar('\n');
 }
+/**
+ * digit - print digit
+ * @n: parameter
+ */
 void digit(int n)
 {
 	if (n < 10)
