@@ -3,24 +3,26 @@
  * print_times_table - n times table
  * @n: parameter n
  */
-void digit(int sum);
 void print_times_table(int n)
 {
 	if (n >= 0 && n <= 15)
 	{
 		int a = 0;
+
 		while (a <= n)
 		{
 			int b = 0;
+
 			while (b <= n)
 			{
 				int sum = a * b;
+
 				if (b != 0)
-                                {
-                                        _putchar(',');
+				{
+					_putchar(',');
 					if (sum < 10)
 					{
-                                        _putchar(' ');
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 
@@ -35,7 +37,7 @@ void print_times_table(int n)
 						_putchar(' ');
 
 
-                                }
+				}
 				digit(sum);
 				b++;
 			}
@@ -53,7 +55,8 @@ void print_times_table(int n)
 if (sum < 10)
 {
 _putchar('0' + sum);
-}else
+}
+else
 {
 digit(sum / 10);
 _putchar('0' + sum % 10);
