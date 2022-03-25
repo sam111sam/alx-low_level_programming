@@ -7,6 +7,7 @@ int main(void)
 {
 	int num1 = 1;
 	int num2 = 2;
+	 int all = 0;
 
 	while (num2  <= 4000000)
 	{
@@ -15,15 +16,11 @@ int main(void)
 		sum = num1 + num2;
 		if (num2 % 2 == 0)
 		{
-		printf("%d", num2);
+			all += num2;
+			printf("%d", all);
 		}
 		num1 = num2;
 		num2 = sum;
-		if (num2 % 2 == 0)
-		{
-			if (num2 <= 4000000)
-			printf(", ");
-		}
 	}
 	printf("\n");
 	return (0);
