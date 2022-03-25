@@ -17,11 +17,11 @@ int main(void)
 		if (num2 % 2 == 0)
 		{
 			all += num2;
-			printf("%d", all);
 		}
 		num1 = num2;
 		num2 = sum;
 	}
+	printf("%d", all);
 	printf("\n");
 	return (0);
 }
