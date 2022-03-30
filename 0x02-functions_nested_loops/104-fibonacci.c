@@ -1,27 +1,46 @@
 #include <stdio.h>
-#include <stdint.h>
+
 /**
- * main - entry point
- * Return: 0 on success
+ * main - fibonacci <3
+ *
+ * Purpose - no hardcode
+ *
+ * Return:  (Success)
  */
+
 int main(void)
 {
-	uint64_t num1 = 1;
-	uint64_t num2 = 2;
-	int a = 1;
+	unsigned long int i;
+	unsigned long int bef = 1;
+	unsigned long int aft = 2;
+	unsigned long int l = 1000000000;
+	unsigned long int bef1;
+	unsigned long int bef2;
+	unsigned long int aft1;
+	unsigned long int aft2;
 
-	printf("%lu, ", num1);
-	while (a <= 97)
+	printf("%lu", bef);
+
+	for (i = 1; i < 91; i++)
 	{
-		uint64_t sum = 0;
+		printf(", %lu", aft);
+		aft += bef;
+		bef = aft - bef;
+	}
 
-		sum = num1 + num2;
-		printf("%lu",  num2);
-		if (a != 97)
-			printf(", ");
-		num1 = num2;
-		num2 =  sum;
-		a++;
+	bef1 = (bef / l);
+	bef2 = (bef % l);
+	aft1 = (aft / l);
+	aft2 = (aft % l);
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", aft1 + (aft2 / l));
+		printf("%lu", aft2 % l);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
 	}
 	printf("\n");
 	return (0);
