@@ -11,7 +11,7 @@ int main(void)
 
 	while (a <= num)
 	{
-		if(num % a == 0)
+		if (num % a == 0)
 		{
 			num = num / a;
 			if (prime <= a)
