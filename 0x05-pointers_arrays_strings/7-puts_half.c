@@ -16,8 +16,17 @@ void puts_half(char *str)
 	}
 	while (i < count)
 	{
-		if (i >= count / 2)
+		if (count % 2 == 0)
+		{
+			if (i >= count / 2)
 			_putchar(*(str + i));
+		}
+		else
+		{
+			if (i > count / 2)
+			_putchar(*(str + i));
+		}
+
 		i++;
 	}
 	_putchar('\n');
