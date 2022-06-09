@@ -5,18 +5,20 @@
  */
 void rev_string(char *s)
 {
-	int i = 0, j = 0;
-	int a[10];
+	int count = 0, i = 0;
+	char tmp, *p;
 
-	while (i < 9)
+	p = s;
+	while (*p != '\0')
 	{
-		a[i] = s[i];
+		count++;
+		p++;
+	}
+	while (i  < (count / 2))
+	{
+		tmp = s[i];
+		s[i] = s[count - 1 - i];
+		s[count - 1 - i] = tmp;
 		i++;
 	}
-	while (j < 9)
-	{
-		s[j] = a[8 - j];
-		j++;
-	}
-
 }
