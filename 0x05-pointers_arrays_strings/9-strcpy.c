@@ -1,20 +1,21 @@
 #include "main.h"
+
 /**
- * _strcpy - copy string to buffer
- * @dest: parameter1
- * @src: parameter 2
- * Return: pointer
+ * *_strcpy - copy strg to another string
+ * @dest: pointer
+ * @src: poiter
+ * Return: numbers dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int i;
 
-	while (*(src + i) != '\n')
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i] = *(src + i);
-		i++;
+		dest[i] = src[i];
 	}
-	dest[i] = '\n';
+	dest[i] = '\0';
 	return (dest);
 }
 
