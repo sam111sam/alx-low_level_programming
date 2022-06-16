@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdint.h>
 /**
  * _atoi - change string to integer
  * @s: parameter
@@ -8,7 +9,7 @@
 int _atoi(char *s)
 
 {
-	int res = 0, j = 0, a = 0, i = 0;
+	int64_t res = 0, j = 0, a = 0, i = 0;
 
 	for (; s[i] != '\0'; i++)
 	{
