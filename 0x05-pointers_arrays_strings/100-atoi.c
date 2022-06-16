@@ -12,12 +12,12 @@ int _atoi(char *s)
 
 	for (; s[i] != '\0'; i++)
 	{
+		if (s[i - 1] == 45)
+			j++;
 		if (s[i] >= 48 && s[i] <= 57)
 		{
 			a++;
 			res = res * 10 + (s[i] - '0');
-			if (s[i - 1] == 45)
-				j++;
 		}
 		else
 		{
@@ -25,7 +25,7 @@ int _atoi(char *s)
 				break;
 		}
 	}
-if (j != 0)
+if (j % 2 != 0)
 	res *= -1;
 return (res);
 }
