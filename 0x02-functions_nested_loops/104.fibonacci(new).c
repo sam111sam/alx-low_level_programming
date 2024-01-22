@@ -4,7 +4,7 @@ int main(void)
         unsigned long  int first_l =0,first_r=1,second_l=0,second_r=2,total_l,total_r;
         int i = 0;
         printf("%lu %lu, ",first_r,second_r);
-        while (i < 97)
+        while (i < 96)
         {
 
                 total_r = (first_r + second_r)% 100;
@@ -18,6 +18,8 @@ int main(void)
                 }
                 if (total_l > 0)
                         printf("%lu",total_l);
+                if ((first_r + second_r) / 10 == 10)
+                        printf("%d",0);
                 printf("%lu",total_r);
                 if (i != 96)
                         printf(", ");
