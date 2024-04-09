@@ -2,7 +2,6 @@
 #include <string.h>
 
 /**
- * 
  * _strpbrk - searches a string for any of a set of bytes.
  * @s: sring given
  * @accept: char to be found
