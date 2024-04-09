@@ -22,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	if (p < &s[j])
+	if (p < &s[strlen(s)])
 		return (p);
 	return (NULL);
 }
