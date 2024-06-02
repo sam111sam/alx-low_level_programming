@@ -28,12 +28,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (text != NULL)
 	{
-		for (i = 0; s1[i]; i++)
+		for (i = 0; l1 != 0 && s1[i]; i++)
 		{
 			text[i] = s1[i];
 		}
 
-		for (i = 0; s2[i]; i++)
+		for (i = 0; l2 && s2[i]; i++)
 		{
 			text[i + l1] = s2[i];
 		}
