@@ -32,18 +32,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (text)
 	{
-		for (i = 0; i < l1; i++)
+		for (i = 0; s1 && i < l1; i++)
 		{
 			text[i] = s1[i];
 		}
 
-		for (i = 0; i < n && i <= l2; i++)
+		for (i = 0; s2 && i < n && i <= l2; i++)
 		{
 			text[l1 + i] = s2[i];
 		}
 
 		if (n < l2)
 			text[l1 + n] = '\0';
+		else if (l2 == 0)
+			text[l1] = '\0';
 	}
 	return (text);
 }
