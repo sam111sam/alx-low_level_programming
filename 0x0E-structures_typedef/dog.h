@@ -1,5 +1,11 @@
 #ifndef dog_h
 #define dog_h
+/**
+ * struct dog - datatype of name,ageand owner
+ * @name: name of a dog
+ * @age: age of a dog
+ * @owner: owner of a dog
+ */
 struct dog
 {
 	char *name;
