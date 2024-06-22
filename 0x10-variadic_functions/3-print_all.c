@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 				flag = 1;
 
 				if (tmp == 0)
-					tmp = "(nill)";
+					tmp = "(nil)";
 				printf("%s", tmp);
 		}
 		i++;
