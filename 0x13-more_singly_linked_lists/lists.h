@@ -1,5 +1,5 @@
-#ifndef list
-#define list
+#ifndef list_h
+#define list_h
 
 #include <stddef.h>
 /**
@@ -17,4 +17,4 @@ typedef struct listint_s
 } listint_t;
 
 size_t print_listint(const listint_t *h);
-#endif /*list*/
+#endif /*list_h*/
