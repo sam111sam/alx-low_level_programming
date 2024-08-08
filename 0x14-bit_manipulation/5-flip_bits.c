@@ -1,5 +1,5 @@
 /**
- * int flip_bits - num of flip to make them same
+ * flip_bits - num of flip to make them same
  * @n: num 1
  * @m: num 2
  * Return: no flip
